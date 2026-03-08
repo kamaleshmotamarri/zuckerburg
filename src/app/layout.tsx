@@ -34,9 +34,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark scroll-smooth">
+    <html lang="en" className="dark scroll-smooth" suppressHydrationWarning>
       <body
         className={`${plusJakarta.variable} ${dmSans.variable} ${jetbrainsMono.variable} font-sans antialiased bg-black text-white selection:bg-blue-500/40 selection:text-white`}
+        suppressHydrationWarning
       >
         {children}
       </body>
